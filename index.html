@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- FONT AWESOME ICON IMPORT -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/index.css" />
     <title>Portfolio - Bryan Johnson</title>
   </head>
   <body>
-    <section class="banner-container">
+    <!-- BEGIN NAVBAR -->
+    <nav>
+      <div class="nav-container">
+        <a href="/index.html" class="logo">BRYAN</a>
+        <div class="right">
+          <ul>
+            <li><a href="#" class="HOME">HOME</a></li>
+            <li><a href="#" class="PORTFOLIO">PORTFOLIO</a></li>
+            <li><a href="#" class="ABOUT">ABOUT</a></li>
+            <li><a href="#" class="CONTACT">RESUME</a></li>
+            <li><a href="#" class="CONTACT">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+    <!-- BEGIN MAIN -->
+    <!-- BEGIN BANNER -->
+    <header class="banner-container">
       <h1>Hi, I'm Bryan.</h1>
       <h2>I'm a Full Stack Software Engineer living in Phoenix, Arizona.</h2>
       <h2>I like to code.</h2>
-    </section>
-    <div class="nav-container">
-      <nav>
-        <a href="/index.html" class="logo"></a>
-        <ul>
-          <li><a href="#" class="HOME">HOME</a></li>
-          <li><a href="#" class="PORTFOLIO">PORTFOLIO</a></li>
-          <li><a href="#" class="ABOUT">ABOUT</a></li>
-          <li><a href="#" class="CONTACT">RESUME</a></li>
-          <li><a href="#" class="CONTACT">CONTACT</a></li>
-        </ul>
-      </nav>
-    </div>
+    </header>
+    <!-- END BANNER -->
+    <!-- BEGIN PORTFOLIO -->
     <main>
       <section class="project-odd">
         <img src="http://lorempixel.com/200/200" alt="Project Name Here" />
@@ -34,11 +50,13 @@
           Obcaecati, asperiores?
         </p>
         <div class="tech-stack-icons">
-          <img src="http://lorempixel.com/50/50" alt="Stack Icon Used" />
-          <img src="http://lorempixel.com/50/50" alt="Stack Icon Used" />
-          <img src="http://lorempixel.com/50/50" alt="Stack Icon Used" />
-          <img src="http://lorempixel.com/50/50" alt="Stack Icon Used" />
-          <img src="http://lorempixel.com/50/50" alt="Stack Icon Used" />
+          <i class="fab fa-react"></i>
+          <i class="fab fa-node-js"></i>
+          <i class="fab fa-css3"></i>
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-js"></i>
+          <i class="fab fa-npm"></i>
+          <i class="fab fa-google"></i>
         </div>
         <div class="tools-used-container">
           <p class="tools-used-text">
@@ -46,6 +64,16 @@
             Similique officia aut, maxime omnis quibusdam amet asperiores rerum architecto libero corporis obcaecati, id
             optio at provident porro?
           </p>
+        </div>
+        <div class="links">
+          <ul>
+            <li>
+              <a href="#"><i class="fas fa-desktop"></i></a> Project Link
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-github"></i></a> Github
+            </li>
+          </ul>
         </div>
       </section>
       <section class="project-even">
@@ -69,6 +97,16 @@
             Similique officia aut, maxime omnis quibusdam amet asperiores rerum architecto libero corporis obcaecati, id
             optio at provident porro?
           </p>
+        </div>
+        <div class="links">
+          <ul>
+            <li>
+              <a href="#"><i class="fas fa-desktop"></i></a> Project Link
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-github"></i></a> Github
+            </li>
+          </ul>
         </div>
       </section>
       <section class="project-odd">
@@ -93,10 +131,20 @@
             optio at provident porro?
           </p>
         </div>
+        <div class="links">
+          <ul>
+            <li>
+              <a href="#"><i class="fas fa-desktop"></i></a> Project Link
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-github"></i></a> Github
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="project-even">
-        <img src="http://lorempixel.com/200/200" alt="Project Name Here" />
-        <h3 class="project-1-title">Project 1</h3>
+        <img src="http://lorempixel.com/200/200" alt="Bookmark Application Image" />
+        <h3 class="project-1-title">Bookmark Application</h3>
         <p class="project-1-description">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem eligendi voluptas, rem nam velit quidem
           cupiditate provident beatae at consectetur vel, saepe maiores rerum doloribus voluptate ex quibusdam?
@@ -116,7 +164,20 @@
             optio at provident porro?
           </p>
         </div>
+        <div class="links">
+          <ul>
+            <li>
+              <a href="https://thinkful-ei26.github.io/bryan-bookmark-app/"><i class="fas fa-desktop"></i></a> Project
+              Link
+            </li>
+            <li>
+              <a href="https://github.com/thinkful-ei26/bryan-bookmark-app"><i class="fab fa-github"></i></a> Github
+            </li>
+          </ul>
+        </div>
       </section>
+      <!-- END PORTFOLIO -->
+      <!-- BEGIN ABOUT ME -->
       <section class="about-container">
         <img src="http://lorempixel.com/445/445" alt="resume picture" class="portfolio-picture" />
         <h3 class="about-title">About Me.</h3>
@@ -131,6 +192,8 @@
           <a href="mailto:itsme@bryanmakes.software" class="email">email</a>.
         </p>
       </section>
+      <!-- END ABOUT ME -->
+      <!-- BEGIN CONTACT -->
       <section class="contact-container">
         <h3>GET IN TOUCH</h3>
         <span class="freelance-status">Accepting freelance offers:</span>
@@ -148,19 +211,33 @@
           <input type="textarea" id="message-body" name="message" />
         </form>
       </section>
-      <footer class="footer">
-        <div class="footer-container">
-          <ul>
-            <li><a href="mailto:itsme@bryanmakes.software">contact</a> |</li>
-            <li><a href="https://twitter.com/cokiwah">twitter</a> |</li>
-            <li><a href="https://github.com/Fantosism">github</a> |</li>
-            <li><a href="https://www.linkedin.com/in/its-bryan-johnson/">linkedin</a></li>
-          </ul>
-        </div>
-        <div class="footer-copyright">
-          <span>&copy; 2019 Bryan Johnson</span>
-        </div>
-      </footer>
+      <!-- END CONTACT -->
+      <!-- END MAIN -->
+      <!-- BEGIN FOOTER -->
     </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <ul>
+          <li><a href="mailto:itsme@bryanmakes.software">contact</a> |</li>
+          <li><a href="https://twitter.com/cokiwah">twitter</a> |</li>
+          <li><a href="https://github.com/Fantosism">github</a> |</li>
+          <li><a href="https://www.linkedin.com/in/its-bryan-johnson/">linkedin</a></li>
+        </ul>
+      </div>
+      <!-- COPYRIGHT SUBFOOTER -->
+      <div class="footer-copyright">
+        <span>&copy; 2019 Bryan Johnson</span>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+    <!-- BEGIN JS SCRIPT -->
+    <script src="./js/banner-animation.js" type="text/javascript"></script>
+    <!-- IMPORT JQUERY -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/banner-animation.js"></script>
   </body>
 </html>
