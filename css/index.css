@@ -129,6 +129,46 @@ table {
 }
 
 /* END MEYERS STYLING RESET */
+
+/* BEGIN CSS MEDIA QUERIES */
+@media all and (min-width: 1200px) {
+  .about-container {
+    max-width: 1140px;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .about-container {
+    max-width: 960px;
+  }
+  .column {
+    flex: 0 0 41.67%;
+    max-width: 41.67%;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .about-container {
+    max-width: 720px;
+  }
+  .column {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media all and (min-width: 576px) {
+  .about-container {
+    max-width: 540px;
+  }
+}
+
+/* END CSS MEDIA QUERIES */
+
+/* BEGIN STYLING */
+
+/* END STYLING */
+
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
@@ -157,4 +197,35 @@ li {
 
 .right {
   float: right !important;
+}
+
+.about-container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.column {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+div {
+  display: block;
+}
+
+section {
+  display: block;
 }
