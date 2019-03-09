@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- FONT AWESOME ICON IMPORT -->
     <link
       rel="stylesheet"
@@ -8,13 +11,13 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- CSS Stylesheet Import -->
     <link rel="stylesheet" href="./css/index.css" />
+    <!-- Google Fonts Import -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Roboto" rel="stylesheet" />
     <title>Full Stack Web Developer - Bryan Johnson</title>
   </head>
-  <body>
+  <body class="content">
     <!-- BEGIN NAVBAR -->
     <nav>
       <div class="nav-container">
@@ -34,9 +37,13 @@
     <!-- BEGIN MAIN -->
     <!-- BEGIN BANNER -->
     <header class="banner-container">
-      <h1>Hi, I'm Bryan.</h1>
-      <h2>I'm a Full Stack Software Engineer living in Phoenix, Arizona.</h2>
-      <h2>I like to code.</h2>
+      <div class="parallax-banner">
+        <div class="banner-text">
+          <h1>Hi, I'm Bryan.</h1>
+          <h2>I'm a Full Stack Software Engineer living in Phoenix, Arizona.</h2>
+          <h2>I like to code.</h2>
+        </div>
+      </div>
     </header>
     <!-- END BANNER -->
     <!-- BEGIN ABOUT ME -->
@@ -261,7 +268,8 @@
       <!-- END PORTFOLIO -->
 
       <!-- BEGIN CONTACT -->
-      <section class="contact-container" id="contact">
+
+      <!-- <section class="contact-container" id="contact">
         <h3>GET IN TOUCH</h3>
         <span class="freelance-status">Accepting freelance offers:</span>
         <label class="switch">
@@ -277,23 +285,32 @@
           <label for="message-body">How can I help?</label>
           <input type="textarea" id="message-body" name="message" />
         </form>
-        <!-- END CONTACT -->
-      </section>
+      </section> -->
+      <!-- END CONTACT -->
+
       <!-- END MAIN -->
     </main>
     <!-- BEGIN FOOTER -->
     <footer class="footer">
       <div class="footer-container">
-        <ul>
-          <li><a href="mailto:itsme@bryanmakes.software">contact</a> |</li>
-          <li><a href="https://twitter.com/cokiwah">twitter</a> |</li>
-          <li><a href="https://github.com/Fantosism">github</a> |</li>
-          <li><a href="https://www.linkedin.com/in/its-bryan-johnson/">linkedin</a></li>
+        <ul class="footer-links">
+          <li
+            ><a href="mailto:itsme@bryanmakes.software"><i class="far fa-envelope"></i>contact</a> |</li
+          >
+          <li
+            ><a href="https://twitter.com/cokiwah"><i class="fab fa-twitter"></i>twitter</a> |</li
+          >
+          <li
+            ><a href="https://github.com/Fantosism"><i class="fab fa-github"></i>github</a> |</li
+          >
+          <li
+            ><a href="https://www.linkedin.com/in/its-bryan-johnson/"><i class="fab fa-linkedin-in"></i>linkedin</a></li
+          >
         </ul>
-      </div>
-      <!-- COPYRIGHT SUBFOOTER -->
-      <div class="footer-copyright">
-        <span>&copy; 2019 Bryan Johnson</span>
+        <!-- COPYRIGHT SUBFOOTER -->
+        <div class="footer-copyright">
+          <span>&copy; 2019 Bryan Johnson</span>
+        </div>
       </div>
     </footer>
     <!-- END FOOTER -->
