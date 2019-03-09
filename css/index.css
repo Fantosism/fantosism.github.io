@@ -131,13 +131,13 @@ table {
 /* END MEYERS STYLING RESET */
 
 /* BEGIN CSS MEDIA QUERIES */
-@media all and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .about-container {
     max-width: 1140px;
   }
 }
 
-@media all and (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   .about-container {
     max-width: 960px;
   }
@@ -147,7 +147,7 @@ table {
   }
 }
 
-@media all and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .about-container {
     max-width: 720px;
   }
@@ -157,7 +157,7 @@ table {
   }
 }
 
-@media all and (min-width: 576px) {
+@media only screen and (min-width: 576px) {
   .about-container {
     max-width: 540px;
   }
