@@ -150,6 +150,7 @@ nav > .nav-container {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   display: flex;
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 body > nav > .nav-container > .logo {
@@ -330,7 +331,7 @@ html {
 
 .banner-text {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -702,7 +703,7 @@ body.header-not-at-top {
 
 .dark-nav-bar {
   color: black !important;
-  background-color: white;
+  background-color: white !important;
 }
 
 .dark-nav-bar:hover {
