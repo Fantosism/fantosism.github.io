@@ -626,8 +626,25 @@ html {
   flex: 8;
   justify-content: flex-end;
   padding-right: 30px;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
 }
 .left-logo {
   padding-left: 30px;
   flex: 4;
+  font-family: Raleway, sans-serif;
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  margin: auto;
+}
+
+.links > li {
+  padding: 5px 15px;
 }
