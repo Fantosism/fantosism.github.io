@@ -231,11 +231,12 @@ li {
   color: #666;
 }
 
-nav > .nav-container > a {
+nav > .nav-container > .left-logo > a {
   color: whitesmoke;
+  text-decoration: none;
 }
 
-.right > ul > li > a {
+.right > li > a {
   color: whitesmoke;
   text-decoration: none;
 }
@@ -255,7 +256,7 @@ a:active {
   color: #0000ff;
 }
 
-nav > a:hover {
+nav > div > a:hover {
   color: #666;
 }
 
@@ -290,8 +291,9 @@ img {
   z-index: 1;
   background-color: whitesmoke;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
+  padding: 10px 30px 10px 30px;
 }
 
 .footer-nav,
@@ -308,6 +310,7 @@ img {
 .footer-links {
   display: flex;
   justify-content: space-between;
+  text-decoration: none !important;
 }
 
 .parallax-banner {
@@ -608,4 +611,23 @@ html {
 /* Stuff */
 .no-anchor-style {
   text-decoration: none;
+}
+
+.footer-links > li > a > .colored {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.footer-links > li > a > {
+  text-decoration: none;
+}
+
+.right-nav {
+  flex: 8;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+.left-logo {
+  padding-left: 30px;
+  flex: 4;
 }
