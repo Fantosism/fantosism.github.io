@@ -213,12 +213,17 @@ li {
   flex: 60%;
   padding-top: 1rem;
   margin: auto;
+  padding-left: 15px;
 }
 
 .project-odd,
 .project-even {
   display: flex;
   flex-wrap: wrap;
+}
+
+.project-even {
+  flex-direction: row-reverse;
 }
 
 .project-1-title {
