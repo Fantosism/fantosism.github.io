@@ -180,14 +180,6 @@ li {
   padding-top: 0.5rem;
 }
 
-.column {
-  position: relative;
-  width: 100%;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
 .portfolio-container {
   display: flex;
   flex-wrap: wrap;
@@ -590,10 +582,9 @@ html {
     max-width: 960px;
     margin: auto;
   }
-  .column {
-    flex: 0 0 41.67%;
-    max-width: 41.67%;
-    margin: auto;
+  .project-odd,
+  .project-even {
+    flex-direction: column;
   }
 }
 
@@ -602,10 +593,6 @@ html {
   .portfolio-container {
     max-width: 720px;
     margin: auto;
-  }
-  .column {
-    flex: 0 0 50%;
-    max-width: 50%;
   }
 }
 
