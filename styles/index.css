@@ -165,11 +165,8 @@ li {
 }
 
 .about-container {
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .flex-container {
@@ -203,6 +200,8 @@ li {
   justify-content: center;
   align-content: center;
   margin: auto;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .about-project-container,
@@ -628,14 +627,15 @@ html {
   padding-right: 30px;
   font-family: Roboto, sans-serif;
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
 }
+
 .left-logo {
   padding-left: 30px;
   flex: 4;
   font-family: Raleway, sans-serif;
   font-weight: 900;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .links {
@@ -647,4 +647,30 @@ html {
 
 .links > li {
   padding: 5px 15px;
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: auto;
+  padding-top: 15px;
+}
+
+.about-title,
+.title-portfolio {
+  font-family: Anton;
+  font-size: 4rem;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.title-container {
+  text-align: center;
+  padding: 10px;
+}
+
+.center-image {
+  display: flex;
+  margin: auto;
 }

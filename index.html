@@ -22,7 +22,7 @@
 
     <!-- Google Fonts Import -->
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,500,900|Roboto:400,500,900"
+      href="https://fonts.googleapis.com/css?family=Anton|Open+Sans|Raleway:400,500,900|Roboto:400,500,900"
       rel="stylesheet"
     />
     <title>Full Stack Web Developer - Bryan Johnson</title>
@@ -85,13 +85,13 @@
     <!-- END BANNER -->
     <!-- BEGIN ABOUT ME -->
     <section class="about-section" id="about" data-scroll-index="1">
-      <div class="flex-container">
+      <div class="flex-container-column">
+        <span class="about-title">About Me.</span>
         <div class="image-container">
           <img src="./assets/0.jpg" alt="resume picture" class="portfolio-picture" />
         </div>
         <div class="about-container">
-          <div class="column flow-text">
-            <h3 class="about-title">About Me.</h3>
+          <div class=" flow-text">
             <p>
               I'm currently living in Phoenix, AZ, but am originally from Southern California. I studied Aerospace
               Engineering at Arizona State University, and most recently worked as a Mortgage Loan Originator. I have
@@ -109,8 +109,9 @@
     <!-- END ABOUT ME -->
     <!-- BEGIN PORTFOLIO -->
     <main id="portfolio" class="flow-text" data-scroll-index="2">
-      <h2>Portfolio</h2>
-      <span class="title-portfolio">WORK I HAVE DONE</span>
+      <div class="title-container">
+        <span class="title-portfolio">Work I have done.</span>
+      </div>
       <div class="portfolio-container">
         <section class="project-odd">
           <div class="image-container">
@@ -171,7 +172,7 @@
 
             <p class="project-1-description">
               Easy as Python was created to implement an alogorithm with a singly linked list in order to practice
-              <a href="https://en.wikipedia.org/wiki/Spaced_repetition"> spaced repitition</a> with the Python
+              <a href="https://en.wikipedia.org/wiki/Spaced_repetition"> spaced repetition</a> with the Python
               programming language. Registering for the App allows the user to login to store their progress and get a
               score depending on how many questions they have answered correctly. There's also a limited trial mode for
               learning without an account. This application was created with React and Redux for state management, with
@@ -216,7 +217,7 @@
         </section>
         <section class="project-odd">
           <div class="image-container">
-            <img src="./assets/MyMDB.PNG" alt="Project Name Here" />
+            <img src="./assets/MyMDB.PNG" alt="MyMDB Screenshot" class="center-image" />
           </div>
           <div class="about-project-container">
             <h3 class="project-1-title">MyMDB</h3>
