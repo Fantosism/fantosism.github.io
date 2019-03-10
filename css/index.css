@@ -130,45 +130,6 @@ table {
 
 /* END MEYERS STYLING RESET */
 
-/* BEGIN CSS MEDIA QUERIES */
-@media only screen and (max-width: 1200px) {
-  .about-container,
-  .portfolio-container {
-    max-width: 1140px;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .about-container,
-  .portfolio-container {
-    max-width: 960px;
-  }
-  .column {
-    flex: 0 0 41.67%;
-    max-width: 41.67%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .about-container,
-  .portfolio-container {
-    max-width: 720px;
-  }
-  .column {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .about-container,
-  .portfolio-container {
-    max-width: 540px;
-  }
-}
-
-/* END CSS MEDIA QUERIES */
-
 /* BEGIN STYLING */
 
 /* END STYLING */
@@ -180,7 +141,7 @@ table {
 }
 
 nav > .nav-container {
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 0;
   z-index: 999;
@@ -189,6 +150,7 @@ nav > .nav-container {
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  display: flex;
 }
 
 body > nav > .nav-container > .logo {
@@ -214,8 +176,9 @@ li {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  width: 85%;
+  margin: auto;
+  padding-top: 0.5rem;
 }
 
 .column {
@@ -229,15 +192,25 @@ li {
 .portfolio-container {
   display: flex;
   flex-wrap: wrap;
+  width: 85%;
+  margin: auto;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
 }
 
 .image-container {
   flex: 40%;
   justify-content: center;
+  align-content: center;
+  margin: auto;
 }
 
-.about-project-container {
+.about-project-container,
+.about-container {
   flex: 60%;
+  padding-top: 1rem;
+  margin: auto;
 }
 
 .project-odd,
@@ -259,12 +232,32 @@ li {
   color: #666;
 }
 
+nav > .nav-container > a {
+  color: whitesmoke;
+}
+
+.right > ul > li > a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+ul > li > a:hover {
+  color: #666;
+}
 a {
   color: #ff4411;
   transition: 0.5s;
   -moz-transition: 0.5s;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
+}
+
+a:active {
+  color: #0000ff;
+}
+
+nav > a:hover {
+  color: #666;
 }
 
 a:hover {
@@ -287,7 +280,7 @@ img {
 }
 
 /* .project-even {
-  background-color: ;
+  background-color: #cac9bb;
 } */
 
 .footer-container {
@@ -319,8 +312,8 @@ img {
 }
 
 .parallax-banner {
-  background-image: url('../background1.jpg');
-  height: 960px;
+  background-image: url('../images/background1.jpg');
+  height: 2500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -348,10 +341,272 @@ html {
   font-size: 3rem;
   text-align: center;
   font-weight: 900;
+  margin: auto;
 }
 
 .banner-text > h2 {
   font-size: 1.5rem;
   text-align: center;
   font-weight: 500;
+  margin: auto;
+}
+
+.portfolio-picture {
+  border-radius: 50%;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h2 {
+  color: #fff;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+/* BEGIN CSS MEDIA QUERIES */
+
+/* Responsive Text */
+
+@media only screen and (min-width: 360px) {
+  .flow-text,
+  .foot-icon {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 390px) {
+  .flow-text,
+  .foot-icon {
+    font-size: 1.224rem;
+  }
+}
+
+@media only screen and (min-width: 420px) {
+  .flow-text,
+  .foot-icon {
+    font-size: 1.248rem;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .flow-text,
+  .foot-icon {
+    font-size: 1.272rem;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .flow-text,
+  .foot-icon {
+    font-size: 1.296rem;
+  }
+}
+
+@media only screen and (min-width: 510px) {
+  .flow-text,
+  .foot-icon {
+    font-size: 1.32rem;
+  }
+}
+
+@media only screen and (min-width: 540px) {
+  .flow-text,
+  .foot-icon {
+    font-size: 1.344rem;
+  }
+}
+
+@media only screen and (min-width: 570px) {
+  .flow-text,
+  .foot-icon {
+    font-size: 1.368rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .flow-text,
+  .foot-icon {
+    font-size: 1.392rem;
+  }
+}
+
+@media only screen and (min-width: 630px) {
+  .flow-text,
+  .foot-icon {
+    font-size: 1.416rem;
+  }
+}
+
+@media only screen and (min-width: 660px) {
+  .flow-text,
+  .foot-icon {
+    font-size: 1.44rem;
+  }
+}
+
+@media only screen and (min-width: 690px) {
+  .flow-text,
+  .foot-icon {
+    font-size: 1.464rem;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .flow-text,
+  .foot-icon {
+    font-size: 1.488rem;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .flow-text,
+  .foot-icon {
+    font-size: 1.512rem;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .flow-text,
+  .foot-icon {
+    font-size: 1.536rem;
+  }
+}
+
+@media only screen and (min-width: 810px) {
+  .flow-text,
+  .foot-icon {
+    font-size: 1.56rem;
+  }
+}
+
+@media only screen and (min-width: 840px) {
+  .flow-text,
+  .foot-icon {
+    font-size: 1.584rem;
+  }
+}
+
+@media only screen and (min-width: 870px) {
+  .flow-text,
+  .foot-icon {
+    font-size: 1.608rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .flow-text,
+  .foot-icon {
+    font-size: 1.632rem;
+  }
+}
+
+@media only screen and (min-width: 930px) {
+  .flow-text,
+  .foot-icon {
+    font-size: 1.656rem;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .flow-text,
+  .foot-icon {
+    font-size: 1.68rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .flow-text,
+  .foot-icon {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 0) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 14.5px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .about-container,
+  .portfolio-container {
+    max-width: 1140px;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .about-container,
+  .portfolio-container {
+    max-width: 960px;
+    margin: auto;
+  }
+  .column {
+    flex: 0 0 41.67%;
+    max-width: 41.67%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-container,
+  .portfolio-container {
+    max-width: 720px;
+    margin: auto;
+  }
+  .column {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .about-container,
+  .portfolio-container {
+    max-width: 540px;
+    margin: auto;
+  }
+}
+
+/* END CSS MEDIA QUERIES */
+
+/* Stuff */
+.no-anchor-style {
+  text-decoration: none;
 }

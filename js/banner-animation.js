@@ -1,21 +1,20 @@
-$(document).ready(() => {
+jQuery(document).ready(function($) {
   //set animation timing
-  let animationDelay = 2500,
+  var animationDelay = 1000,
     //loading bar effect
     barAnimationDelay = 3800,
     barWaiting = barAnimationDelay - 3000, //3000 is the duration of the transition on the loading bar - set in the scss/css file
     //letters effect
-    lettersDelay = 50,
+    lettersDelay = 25,
     //type effect
-    typeLettersDelay = 150,
-    selectionDuration = 500,
+    typeLettersDelay = 100,
+    selectionDuration = 300,
     typeAnimationDelay = selectionDuration + 800,
     //clip effect
     revealDuration = 600,
     revealAnimationDelay = 1500
 
   initHeadline()
-
   function initHeadline() {
     //insert <i> element for each letter of a changing word
     singleLetters($('.cd-headline.letters').find('b'))
@@ -25,22 +24,22 @@ $(document).ready(() => {
 
   function singleLetters($words) {
     $words.each(function() {
-      let word = $(this),
+      var word = $(this),
         letters = word.text().split(''),
         selected = word.hasClass('is-visible')
       for (i in letters) {
         if (word.parents('.rotate-2').length > 0) letters[i] = '<em>' + letters[i] + '</em>'
         letters[i] = selected ? '<i class="in">' + letters[i] + '</i>' : '<i>' + letters[i] + '</i>'
       }
-      let newLetters = letters.join('')
+      var newLetters = letters.join('')
       word.html(newLetters).css('opacity', 1)
     })
   }
 
   function animateHeadline($headlines) {
-    let duration = animationDelay
+    var duration = animationDelay
     $headlines.each(function() {
-      let headline = $(this)
+      var headline = $(this)
 
       if (headline.hasClass('loading-bar')) {
         duration = barAnimationDelay
@@ -48,15 +47,15 @@ $(document).ready(() => {
           headline.find('.cd-words-wrapper').addClass('is-loading')
         }, barWaiting)
       } else if (headline.hasClass('clip')) {
-        let spanWrapper = headline.find('.cd-words-wrapper'),
+        var spanWrapper = headline.find('.cd-words-wrapper'),
           newWidth = spanWrapper.width() + 10
         spanWrapper.css('width', newWidth)
       } else if (!headline.hasClass('type')) {
         //assign to .cd-words-wrapper the width of its longest word
-        let words = headline.find('.cd-words-wrapper b'),
+        var words = headline.find('.cd-words-wrapper b'),
           width = 0
         words.each(function() {
-          let wordWidth = $(this).width()
+          var wordWidth = $(this).width()
           if (wordWidth > width) width = wordWidth
         })
         headline.find('.cd-words-wrapper').css('width', width)
@@ -70,10 +69,10 @@ $(document).ready(() => {
   }
 
   function hideWord($word) {
-    let nextWord = takeNext($word)
+    var nextWord = takeNext($word)
 
     if ($word.parents('.cd-headline').hasClass('type')) {
-      let parentSpan = $word.parent('.cd-words-wrapper')
+      var parentSpan = $word.parent('.cd-words-wrapper')
       parentSpan.addClass('selected').removeClass('waiting')
       setTimeout(function() {
         parentSpan.removeClass('selected')
@@ -88,7 +87,7 @@ $(document).ready(() => {
         showWord(nextWord, typeLettersDelay)
       }, typeAnimationDelay)
     } else if ($word.parents('.cd-headline').hasClass('letters')) {
-      let bool = $word.children('i').length >= nextWord.children('i').length ? true : false
+      var bool = $word.children('i').length >= nextWord.children('i').length ? true : false
       hideLetter($word.find('i').eq(0), $word, bool, lettersDelay)
       showLetter(nextWord.find('i').eq(0), nextWord, bool, lettersDelay)
     } else if ($word.parents('.cd-headline').hasClass('clip')) {
@@ -140,7 +139,7 @@ $(document).ready(() => {
     }
 
     if ($letter.is(':last-child') && $('html').hasClass('no-csstransitions')) {
-      let nextWord = takeNext($word)
+      var nextWord = takeNext($word)
       switchWord($word, nextWord)
     }
   }
