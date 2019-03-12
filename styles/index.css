@@ -608,6 +608,7 @@ html {
 /* END CSS MEDIA QUERIES */
 
 /* Stuff */
+
 .no-anchor-style {
   text-decoration: none;
 }
@@ -708,4 +709,21 @@ body.header-not-at-top {
 
 .dark-nav-bar:hover {
   color: whitesmoke !important;
+}
+
+p {
+  line-height: 110%;
+}
+
+html {
+  background-color: #ebf0e9;
+}
+
+.tools-used-text {
+  padding-top: 10px;
+}
+
+.tech-stack-icons {
+  display: flex;
+  justify-content: space-between;
 }
