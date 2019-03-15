@@ -207,6 +207,7 @@ li {
   padding-top: 1rem;
   margin: auto;
   padding-left: 15px;
+  padding-right: 15px;
 }
 
 .project-odd,
@@ -224,6 +225,7 @@ li {
   font-weight: bold;
   padding-bottom: 10px;
   color: #ff4411;
+  text-align: center;
 }
 
 .project-1-description {
@@ -586,6 +588,10 @@ html {
   .project-odd,
   .project-even {
     flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .side-nav {
+    display: block;
   }
 }
 
@@ -726,4 +732,8 @@ html {
 .tech-stack-icons {
   display: flex;
   justify-content: space-between;
+}
+
+.side-nav {
+  display: none;
 }

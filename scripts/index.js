@@ -1,4 +1,4 @@
 $(function() {
   $.scrollIt()
-  initHeadline()
+  // initHeadline()
 })
