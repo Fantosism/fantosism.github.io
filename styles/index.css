@@ -207,6 +207,7 @@ li {
   padding-top: 1rem;
   margin: auto;
   padding-left: 15px;
+  padding-right: 15px;
 }
 
 .project-odd,
@@ -224,6 +225,7 @@ li {
   font-weight: bold;
   padding-bottom: 10px;
   color: #ff4411;
+  text-align: center;
 }
 
 .project-1-description {
@@ -551,9 +553,36 @@ html {
   }
 }
 
-@media only screen and (min-width: 0) {
-  html {
-    font-size: 14px;
+.invisible {
+  display: none;
+}
+
+@media only screen and (min-width: 681px) {
+  .slicknav_menu {
+    display: none;
+  }
+}
+
+/* ! This is where we have the query for when the side-nav starts being disfuntional */
+@media only screen and (max-width: 680px) {
+  /* TODO Make hamburger visible */
+  /* TODO Center logo */
+  /* TODO Make text more visible on smaller screen (adjust shadow or border? */
+  .banner-text {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  .right-nav {
+    display: none !important;
+  }
+  .left-logo {
+    display: flex;
+    margin: auto !important;
+    align-content: center !important;
+    justify-content: center;
+    padding-left: 0 !important;
+  }
+  .js .slicknav_menu {
+    display: block;
   }
 }
 
@@ -586,6 +615,10 @@ html {
   .project-odd,
   .project-even {
     flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .side-nav {
+    display: block;
   }
 }
 
@@ -623,7 +656,6 @@ html {
 }
 
 .right-nav {
-  flex: 8;
   justify-content: flex-end;
   padding-right: 30px;
   font-family: Roboto, sans-serif;

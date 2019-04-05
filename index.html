@@ -24,28 +24,42 @@
       href="https://fonts.googleapis.com/css?family=Anton|Open+Sans|Raleway:400,500,900|Roboto:400,500,900"
       rel="stylesheet"
     />
+    <!-- Hamburger Nav Import -->
+    <link rel="stylesheet" href="./styles/slicknav.css" />
+
     <title>Full Stack Web Developer - Bryan Johnson</title>
   </head>
   <body class="content" data-scroll-index="0">
     <!-- BEGIN NAVBAR -->
-    <nav>
+    <nav role="navigation" aria-label="Main">
       <div class="nav-container">
         <div class="left-logo">
-          <a href="/index.html" class="logo">BRYAN</a>
+          <a href="#" class="logo home">BRYAN</a>
         </div>
         <div class="right-nav">
+          <!-- Mobile Nav Bar -->
           <ul class="right">
             <li><a href="#" class="HOME">HOME</a></li>
             <li><a href="#about" class="ABOUT">ABOUT</a></li>
             <li><a href="#portfolio" class="PORTFOLIO">PORTFOLIO</a></li>
-            <li><a href="#GITHUB" class="GITHUB">GITHUB</a></li>
-            <li><a href="#contact" class="CONTACT">CONTACT</a></li>
+            <li><a href="https://github.com/Fantosism" target="_blank" class="GITHUB">GITHUB</a></li>
+            <li><a href="mailto:itsme@bryanmakes.software" class="CONTACT">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="side-nav">
+          <ul class="right invisible" id="menu">
+            <li><a href="#" class="HOME">HOME</a></li>
+            <li><a href="#about" class="ABOUT">ABOUT</a></li>
+            <li><a href="#portfolio" class="PORTFOLIO">PORTFOLIO</a></li>
+            <li><a href="https://github.com/Fantosism" target="_blank" class="GITHUB">GITHUB</a></li>
+            <li><a href="mailto:itsme@bryanmakes.software" class="CONTACT">CONTACT</a></li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- END NAVBAR -->
     <!-- BEGIN MAIN -->
+
     <!-- BEGIN BANNER -->
     <header class="banner-container">
       <div class="parallax-banner">
@@ -82,7 +96,11 @@
       </div>
     </header>
     <!-- END BANNER -->
+    <!-- Mobile Nav Menu -->
+
+    <!-- END MOVILE NAV MENU -->
     <!-- BEGIN ABOUT ME -->
+    <div class="test-me"></div>
     <section class="about-section" id="about" data-scroll-index="1">
       <div class="flex-container-column">
         <span class="about-title">About Me.</span>
@@ -148,7 +166,9 @@
             <div class="flex-container">
               <ul class="links">
                 <li>
-                  <a class="no-anchor-style" href="#" target="_blank"><i class="fas fa-desktop"></i> Live Demo</a>
+                  <a class="no-anchor-style" href="https://helpful-client.herokuapp.com" target="_blank"
+                    ><i class="fas fa-desktop"></i> Live Demo</a
+                  >
                 </li>
                 <li>
                   <a class="no-anchor-style" href="https://github.com/Fantosism/Helpful-Client" target="_blank"
@@ -242,10 +262,14 @@
             <div class="flex-container">
               <ul class="links">
                 <li>
-                  <a href="#" class="no-anchor-style" target="_blank"><i class="fas fa-desktop"></i> Live Demo</a>
+                  <a href="https://mymdb-client.herokuapp.com/" class="no-anchor-style" target="_blank"
+                    ><i class="fas fa-desktop"></i> Live Demo</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="no-anchor-style" target="_blank"><i class="fab fa-github"></i> View Source</a>
+                  <a href="https://github.com/Fantosism/mymdb-client" class="no-anchor-style" target="_blank"
+                    ><i class="fab fa-github"></i> View Source</a
+                  >
                 </li>
               </ul>
             </div>
@@ -329,16 +353,17 @@
       <div class="footer-container">
         <ul class="footer-links">
           <li
-            ><a href="mailto:itsme@bryanmakes.software"><i class="far fa-envelope foot-icon"></i></a
+            ><a aria-label="email" href="mailto:itsme@bryanmakes.software"><i class="far fa-envelope foot-icon"></i></a
           ></li>
           <li
-            ><a href="https://twitter.com/cokiwah"><i class="fab fa-twitter foot-icon"></i></a
+            ><a aria-label="twitter" href="https://twitter.com/cokiwah"><i class="fab fa-twitter foot-icon"></i></a
           ></li>
           <li
-            ><a href="https://github.com/Fantosism"><i class="fab fa-github foot-icon"></i></a>
+            ><a aria-label="Github" href="https://github.com/Fantosism"><i class="fab fa-github foot-icon"></i></a>
           </li>
           <li
-            ><a href="https://www.linkedin.com/in/its-bryan-johnson/"><i class="fab fa-linkedin-in foot-icon"></i></a
+            ><a aria-label="linkedin" href="https://www.linkedin.com/in/its-bryan-johnson/"
+              ><i class="fab fa-linkedin-in foot-icon"></i></a
           ></li>
         </ul>
         <!-- COPYRIGHT SUBFOOTER -->
@@ -352,9 +377,11 @@
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/slicknav@1.0.8/dist/jquery.slicknav.min.js"></script>
     <script src="./scripts/banner-animation.js" type="text/javascript"></script>
     <script src="./scripts/scroll-it.js" type="text/javascript"></script>
     <script src="./scripts/scroll-position.js" type="text/javascript"></script>
     <script src="./scripts/index.js" type="text/javascript"></script>
+    <script src="./scripts/mobile-nav.js" type="text/javascript"></script>
   </body>
 </html>
