@@ -2,7 +2,7 @@ $(function() {
   $('#menu').slicknav({
     label: '',
     duplicate: true,
-    appendTo: '.test-me',
+    appendTo: '.side-nav',
     closeOnClick: true,
   })
 })
