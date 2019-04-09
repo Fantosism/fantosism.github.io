@@ -347,6 +347,7 @@ html {
   text-align: center;
   font-weight: 900;
   margin: auto;
+  line-height: 1.1;
 }
 
 .banner-text > h2 {
@@ -354,6 +355,7 @@ html {
   text-align: center;
   font-weight: 500;
   margin: auto;
+  line-height: 1.1;
 }
 
 .portfolio-picture {
@@ -563,7 +565,7 @@ html {
   }
 }
 
-/* ! This is where we have the query for when the side-nav starts being disfuntional */
+/* ! This is where we have the query for when the side-nav starts being dysfunctional */
 @media only screen and (max-width: 680px) {
   /* TODO Make hamburger visible */
   /* TODO Center logo */
@@ -582,6 +584,9 @@ html {
   }
   .js .slicknav_menu {
     display: block;
+  }
+  .title-container {
+    padding: 30px !important;
   }
 }
 
