@@ -166,7 +166,7 @@ li {
 }
 
 .about-container {
-  padding: 15px;
+  padding: 30px;
   background-color: whitesmoke;
   justify-content: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -704,7 +704,7 @@ html {
 
 .title-container {
   text-align: center;
-  padding: 10px;
+  padding: 30px;
 }
 
 .center-image {
