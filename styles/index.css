@@ -166,7 +166,7 @@ li {
 }
 
 .about-container {
-  padding: 15px;
+  padding: 30px;
   background-color: whitesmoke;
   justify-content: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -347,6 +347,7 @@ html {
   text-align: center;
   font-weight: 900;
   margin: auto;
+  line-height: 1.1;
 }
 
 .banner-text > h2 {
@@ -354,6 +355,7 @@ html {
   text-align: center;
   font-weight: 500;
   margin: auto;
+  line-height: 1.1;
 }
 
 .portfolio-picture {
@@ -563,7 +565,7 @@ html {
   }
 }
 
-/* ! This is where we have the query for when the side-nav starts being disfuntional */
+/* ! This is where we have the query for when the side-nav starts being dysfunctional */
 @media only screen and (max-width: 680px) {
   /* TODO Make hamburger visible */
   /* TODO Center logo */
@@ -579,10 +581,12 @@ html {
     margin: auto !important;
     align-content: center !important;
     justify-content: center;
-    padding-left: 0 !important;
   }
   .js .slicknav_menu {
     display: block;
+  }
+  .title-container {
+    padding: 30px !important;
   }
 }
 
@@ -700,7 +704,7 @@ html {
 
 .title-container {
   text-align: center;
-  padding: 10px;
+  padding: 30px;
 }
 
 .center-image {
